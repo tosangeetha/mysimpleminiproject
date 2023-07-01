@@ -1,7 +1,7 @@
 # Create EC2 instances
 resource "aws_instance" "sangeethawebserver1" {
   count = 2
-  ami           = "ami-0c91f4476780c2eaf "  # Replace with the desired Amazon Linux AMI ID
+  ami           = "ami-0c91f4476780c2eaf"  # Replace with the desired Amazon Linux AMI ID
   instance_type = "t2.micro"
   key_name      = "SangeethaKeyPair"  # Replace with the name of your keypair
 
