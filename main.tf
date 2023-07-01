@@ -9,7 +9,7 @@ resource "aws_instance" "sangeethawebserver1" {
   vpc_security_group_ids      = ["sg-0dd65e48722662e22"]  # Replace with the ID of your existing security group
 
   tags = {
-    Name = "Webserver-san1"
+    Name = "ws-san-1"
   }
 }
 
@@ -23,7 +23,7 @@ resource "aws_instance" "sangeethawebserver2" {
   vpc_security_group_ids      = ["sg-0dd65e48722662e22"]  # Replace with the ID of your existing security group
 
   tags = {
-    Name = "Webserver-san2"
+    Name = "ws-san-2"
   }
 }
 
