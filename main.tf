@@ -1,5 +1,5 @@
 # Create EC2 instances
-resource "aws_instance" " webserver1" {
+resource "aws_instance" "sangeethawebserver1" {
   ami           = "ami-0c91f4476780c2eaf "  # Replace with the desired Amazon Linux AMI ID
   instance_type = "t2.micro"
   key_name      = "SangeethaKeyPair"  # Replace with the name of your keypair
@@ -9,11 +9,11 @@ resource "aws_instance" " webserver1" {
   vpc_security_group_ids      = ["sg-0dd65e48722662e22"]  # Replace with the ID of your existing security group
 
   tags = {
-    Name = "Webserver-1"
+    Name = "Webserver-san1"
   }
 }
 
-resource "aws_instance" "webserver2" {
+resource "aws_instance" "sangeethawebserver2" {
   ami           = "ami-0c91f4476780c2eaf"  # Replace with the desired Amazon Linux AMI ID
   instance_type = "t2.micro"
   key_name      = "SangeethaKeyPair"  # Replace with the name of your keypair
@@ -23,7 +23,7 @@ resource "aws_instance" "webserver2" {
   vpc_security_group_ids      = ["sg-0dd65e48722662e22"]  # Replace with the ID of your existing security group
 
   tags = {
-    Name = "Webserver-2"
+    Name = "Webserver-san2"
   }
 }
 
