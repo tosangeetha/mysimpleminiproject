@@ -1,8 +1,3 @@
-# Configure the AWS provider
-provider "aws" {
-  region = "ap-southeast-1"  # Replace with your desired region
-}
-
 # Create EC2 instances
 resource "aws_instance" " webserver1" {
   ami           = "ami-0c91f4476780c2eaf "  # Replace with the desired Amazon Linux AMI ID
